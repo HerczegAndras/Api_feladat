@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "userId": 1,
+    "productId": 1,
+    "quantity": 1,
+    "createdAt": "2026-01-01T10:00:00Z"
+  },
+  {
+    "id": 2,
+    "userId": 2,
+    "productId": 2,
+    "quantity": 2,
+    "createdAt": "2026-01-02T11:00:00Z"
+  }
+]

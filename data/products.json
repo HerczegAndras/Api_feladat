@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Gaming Laptop Pro X15",
+    "price": 529990,
+    "stock": 12,
+    "rating": 4.8,
+    "manufacturer": {
+      "name": "TechMaster",
+      "country": "Japan"
+    },
+    "image": "https://picsum.photos/id/1/400/300",
+    "features": [
+      "Intel Core i7",
+      "32 GB RAM",
+      "1 TB SSD",
+      "RTX 4070"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "OfficeBook 15",
+    "price": 289990,
+    "stock": 4,
+    "rating": 4.2,
+    "manufacturer": {
+      "name": "WorkTech",
+      "country": "Germany"
+    },
+    "image": "https://picsum.photos/id/2/400/300",
+    "features": [
+      "Intel Core i5",
+      "16 GB RAM",
+      "512 GB SSD"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "körte",
+    "price": 120,
+    "stock": 10,
+    "rating": 0,
+    "manufacturer": {},
+    "image": "",
+    "features": []
+  }
+]
