@@ -1,0 +1,72 @@
+:root {
+    --irish-green: #169B62;
+    --irish-green-hover: #128051;
+    --emerald-green: #046307;
+    --emerald-light: #e6f4ee;
+    --emerald-border: #b7e1cd;
+    --bg-mint: #f3f9f6;
+}
+
+body {
+    background-color: var(--bg-mint);
+}
+
+.text-emerald {
+    color: var(--emerald-green);
+}
+
+
+.emerald-header {
+    background: linear-gradient(135deg, var(--emerald-green) 0%, var(--irish-green) 100%);
+}
+
+
+.badge-irish {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(4px);
+}
+
+.btn-irish {
+    background-color: var(--irish-green);
+    border-color: var(--irish-green);
+    color: #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-irish:hover,
+.btn-irish:focus {
+    background-color: var(--irish-green-hover);
+    border-color: var(--emerald-green);
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(22, 155, 98, 0.25);
+}
+
+.form-control {
+    border-color: var(--emerald-border);
+}
+
+.form-control:focus {
+    border-color: var(--irish-green);
+    box-shadow: 0 0 0 0.25rem rgba(22, 155, 98, 0.2);
+}
+
+
+#status.alert-info {
+    background-color: var(--emerald-light);
+    color: var(--emerald-green);
+    border: 1px solid var(--emerald-border);
+}
+
+
+.table-emerald thead th {
+    background-color: #f8fcfa;
+    color: var(--emerald-green);
+    border-bottom: 2px solid var(--emerald-border);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(22, 155, 98, 0.06);
+}
