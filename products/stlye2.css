@@ -1,0 +1,126 @@
+/* --- ALAP VÁLTOZÓK --- */
+:root {
+    --emerald-dark: #064e3b;
+    --emerald-green: #047857;
+    --irish-green: #10b981;
+    --emerald-light: #ecfdf5;
+    --emerald-border: #a7f3d0;
+    --bg-mint: #f8fafc;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+}
+
+/* --- GLOBÁLIS BEÁLLÍTÁSOK --- */
+body {
+    background-color: var(--bg-mint);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text-main);
+    -webkit-font-smoothing: antialiased;
+}
+
+p, span, label, h1, h2, h3, h4, h5, h6, .form-label, .card-text {
+    color: var(--text-main);
+}
+
+.text-emerald {
+    color: var(--emerald-green) !important;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* --- SMARAGDZÖLD FEJLÉCEK --- */
+.emerald-header, 
+.emerald-header h2, 
+.emerald-header h5, 
+.emerald-header i {
+    color: #ffffff !important;
+}
+
+.emerald-header {
+    background: linear-gradient(135deg, var(--emerald-dark) 0%, var(--emerald-green) 50%, var(--irish-green) 100%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+/* --- KÁRTYÁK ÉS KÁRTYA ANIMÁCIÓK --- */
+.card {
+    border: 1px solid var(--emerald-border);
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(4, 120, 87, 0.05), 0 2px 4px -2px rgba(4, 120, 87, 0.05);
+}
+
+.product-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px -3px rgba(4, 120, 87, 0.12), 0 4px 6px -4px rgba(4, 120, 87, 0.08) !important;
+}
+
+/* --- TERMÉKKÉPEK ÉS HOVER NAGYÍTÁS --- */
+.product-img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    background-color: var(--emerald-light);
+    border-bottom: 1px solid var(--emerald-border);
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.02);
+}
+
+/* --- ŰRLAPOK ÉS INPUT FÓKUSZ --- */
+.form-control, .form-select {
+    border-color: var(--emerald-border);
+    padding: 0.7rem 1rem;
+    background-color: #ffffff;
+    color: var(--text-main);
+    font-size: 0.95rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--irish-green);
+    background-color: #ffffff;
+    color: var(--text-main);
+    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.15);
+}
+
+.form-control::placeholder {
+    color: #94a3b8;
+}
+
+/* --- GOMBOK --- */
+.btn-irish {
+    background: linear-gradient(135deg, var(--emerald-green), var(--irish-green));
+    border: none;
+    color: #ffffff !important;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+}
+
+.btn-irish:hover,
+.btn-irish:focus {
+    background: linear-gradient(135deg, var(--emerald-dark), var(--emerald-green));
+    color: #ffffff !important;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(16, 185, 129, 0.35);
+}
+
+/* --- ÁLLAPOTJELZŐK ÉS LISTÁK --- */
+#status.alert-info {
+    background-color: var(--emerald-light);
+    color: var(--emerald-dark);
+    border: 1px solid var(--emerald-border);
+    font-weight: 500;
+}
+
+.list-group-item {
+    background-color: transparent;
+    color: var(--text-main);
+    border-color: #f1f5f9;
+}
